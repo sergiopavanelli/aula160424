@@ -1,0 +1,78 @@
+import java.util.Scanner;
+
+public class Conta {
+
+    int id;
+    Double saldo = 0.0;   
+
+
+    public Conta (int id, Double saldo) {
+        this.id = id;
+        this.saldo = saldo;
+    }
+
+    
+    public boolean debito (Double valor) {
+        if (this.saldo >= valor) {
+            this.saldo -= valor;
+            return true;
+        
+        } else {
+            System.out.println("Saldo insuficiente");
+            return false;
+        } 
+    }
+
+    public void credito (Double valor) {
+        if (this.saldo <= valor) {
+        } else {
+                this.saldo += valor;
+            }
+        
+        }
+    
+    Scanner teclado =  new Scanner(System.in);
+
+
+
+}
+
+--------------------------------------------------
+
+import java.util.Date;
+
+
+
+public class Transacao {
+
+    int id;
+    Date data;
+    Double valor;
+
+    public Transacao (int id, Date data, Double valor) {
+
+        this.id = id; 
+        this.data = data;
+        this.valor = valor;
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+
+    public Double contaDebito (Double valor) {
+        return valor;        
+    }
+
+    public Double contaCredito (Double valor)  {
+        return valor;}
+
+
+
+
+
+}
+
+
