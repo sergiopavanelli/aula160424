@@ -7,6 +7,8 @@ public class App {
     Conta conta1 = new Conta(1, 30.0);
     Conta conta3 = new Conta (3, 20.0);
 
+    //teste mac
+
     Scanner teclado = new Scanner(System.in);
 
     System.out.println("Digite o valor a ser transferido: ");
