@@ -9,11 +9,6 @@ public class App {
 
     Scanner teclado = new Scanner(System.in);
 
-    //teste commit mac
-    // teste2 
-    // teste3
-    // teste65
-   
     System.out.println("Digite o valor a ser transferido: ");
     Double valor = teclado.nextDouble();
     
